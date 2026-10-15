@@ -25,7 +25,7 @@
 | **kb-13** | Tangible outcomes & products | **VERIFIED** | Outcomes & Case Systems | 2026-10-15 |
 | **kb-14** | Tools & tech stack | **VERIFIED** | Curriculum & Tools Stack | 2026-10-15 |
 | **kb-15** | Tools becoming outdated | **VERIFIED** | Curriculum Philosophy | 2026-10-15 |
-| **kb-16** | Is it worth Rs 2,999 | **VERIFIED** | Pricing & Value Proposition | 2026-10-15 |
+| **kb-16** | Is it worth ₹2,999 | **VERIFIED** | Pricing & Value Proposition | 2026-10-15 |
 | **kb-17** | Job, placement or salary guarantee | **UNVERIFIED** | Not Stated on Official Page | 2026-10-15 |
 | **kb-18** | Total hours or lesson count | **UNVERIFIED** | Not Stated on Official Page | 2026-10-15 |
 | **kb-19** | Teaching language (Hindi/English) | **UNVERIFIED** | Not Stated on Official Page | 2026-10-15 |
@@ -44,7 +44,7 @@
 
 ### `kb-02` · Price and Payment
 - **Question:** How much does the course cost and how do I pay?
-- **Answer:** The course fee is Rs 2,999 one-time (GST included). Payment is processed securely via Razorpay. Eligible debit/credit cards may also see EMI options at checkout.
+- **Answer:** The course fee is ₹2,999 one-time (GST included). Payment is processed securely via Razorpay. Eligible debit/credit cards may also see EMI options at checkout.
 - **Status:** `VERIFIED`
 - **Keywords:** price, cost, fee, fees, kitna, rupees, inr, 2999, pay, payment, razorpay, emi, discount, charge
 
@@ -86,7 +86,7 @@
 
 ### `kb-09` · Community & Mentorship
 - **Question:** What is the community and mentor support?
-- **Answer:** Enrolment includes access to the private Lapaas learner community. You can connect with fellow builders and directly ask questions to mentor Sahil Khanna (who has 14 years of experience building businesses and teams, and 2,400+ alumni according to the page).
+- **Answer:** Enrolment includes access to the Lapaas learner community. You can connect with fellow builders and directly ask questions to mentor Sahil Khanna (who has 14 years of experience building businesses and teams, and 2,400+ alumni according to the page).
 - **Status:** `VERIFIED`
 - **Keywords:** community, mentor, sahil, sahil khanna, support, doubt, ask, group, network, help
 
@@ -127,8 +127,8 @@
 - **Keywords:** outdated, obsolete, future proof, changing, tools change, relevance, worth it
 
 ### `kb-16` · Course Value & ROI
-- **Question:** Is this course worth Rs 2,999?
-- **Answer:** At Rs 2,999, it is positioned as an accessible, high-value alternative to full-stack tech bootcamps that charge Rs 30,000 to Rs 1,00,000+. It provides practical MVP shipping knowledge, direct community access, and mentor guidance without heavy financial risk.
+- **Question:** Is this course worth ₹2,999?
+- **Answer:** At ₹2,999, it is positioned as an accessible, high-value alternative to full-stack tech bootcamps that charge ₹30,000 to ₹1,00,000+. It provides practical MVP shipping knowledge, direct community access, and mentor guidance without heavy financial risk.
 - **Status:** `VERIFIED`
 - **Keywords:** worth it, value, worth, expensive, cheap, roi, investment, compare
 
