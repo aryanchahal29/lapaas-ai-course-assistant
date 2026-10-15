@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lapaas AI Product Engineering | Course Discovery &amp; Readiness Assistant</title>
+  <meta name="description" content="Evaluate if the Lapaas AI Product Engineering course fits your goals. Check where you start, what you build, and official course details in 60 seconds.">
+  
+  <!-- Brand Typography: Plus Jakarta Sans (Headings/Buttons/Labels) & Inter (Body/Chat/Inputs) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#toolBand" class="skip-link">Skip to Course Assistant</a>
+
+  <!-- 1. Masthead (Obsidian, target <= 112px) -->
+  <header class="masthead">
+    <div class="container masthead-container">
+      <div class="brand-block">
+        <img src="assets/lapaas_logo.png" alt="Lapaas AI Product Engineering Logo" class="brand-logo" width="80" height="106">
+        <div class="brand-text">
+          <span class="brand-wordmark">Lapaas AI Product Engineering</span>
+          <span class="brand-descriptor">Course Discovery &amp; Readiness Assistant</span>
+        </div>
+      </div>
+      <div class="masthead-actions">
+        <a href="https://cohort.lapaas.com/" target="_blank" rel="noopener noreferrer" class="masthead-link">Official course page</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Hero Section (Obsidian, 12 columns, max total height with masthead <= 560px at 1440x900) -->
+  <section class="hero-section" aria-labelledby="heroHeading">
+    <div class="container hero-container">
+      <div class="hero-grid">
+        <!-- Left: 7 columns -->
+        <div class="hero-left">
+          <h1 id="heroHeading" class="hero-title">Find out if the AI Product Engineering course fits you.</h1>
+          <p class="hero-subtext">Answer 6 questions. You will see where you would start, what you can build, and what to know before you enroll. Answers come from the official course details.</p>
+          <div class="hero-cta-row">
+            <button id="startDiscoveryBtn" type="button" class="btn-primary">Start the 60-second check</button>
+            <a href="https://cohort.lapaas.com/" target="_blank" rel="noopener noreferrer" class="link-secondary">Official course page (<span class="tabular">Rs 2,999</span>)</a>
+          </div>
+        </div>
+
+        <!-- Right: 5 columns (3 facts vertical list, top-aligned with H1 cap height) -->
+        <div class="hero-right">
+          <div class="facts-list">
+            <div class="fact-row">
+              <h2 class="fact-label">No prior coding needed</h2>
+              <p class="fact-text">The curriculum starts with AI and product foundations. You learn to build working apps using modern AI developer tools.</p>
+            </div>
+            <div class="fact-row">
+              <h2 class="fact-label">Working MVP outcomes</h2>
+              <p class="fact-text">Build real, deployed software products (web apps, databases, automated workflows) to showcase your proof of work.</p>
+            </div>
+            <div class="fact-row">
+              <h2 class="fact-label">Community and mentor access</h2>
+              <p class="fact-text">Join the private Lapaas learner community and directly ask questions to founder and mentor Sahil Khanna.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Tool Band (Chalk White, 12 columns, 96px vertical padding desktop, 56px mobile) -->
+  <section id="toolBand" class="tool-band" aria-label="Course Discovery Tool">
+    <div class="container tool-container">
+      <div class="tool-grid">
+        
+        <!-- Left Rail: 4 columns (Sticky on desktop, Collapsible <details> on mobile) -->
+        <aside class="tool-rail" aria-label="Course Fit Overview and Answers Ledger">
+          <div class="rail-header">
+            <span class="section-index">01</span>
+            <h2 class="rail-title">Course fit check</h2>
+            <p class="rail-desc">Answer 6 guided questions or ask about tuition, requirements, format, and policies.</p>
+          </div>
+
+          <!-- Mobile Collapsible Details -->
+          <details class="mobile-ledger" id="mobileLedger">
+            <summary class="mobile-ledger-summary">
+              <span>Your answers (<span id="mobileAnswerCount" class="tabular">0</span> of <span class="tabular">6</span>)</span>
+              <span class="mobile-summary-hint">View ledger</span>
+            </summary>
+            <div id="mobileLedgerContent" class="mobile-ledger-body">
+              <!-- Replicated dynamic ledger rows for mobile -->
+            </div>
+          </details>
+
+          <!-- Desktop Sticky Answers Ledger (6 rows, 56px each, hairline between) -->
+          <div class="desktop-ledger" aria-label="Answers Ledger">
+            <div class="ledger-table" id="desktopLedgerTable" role="table" aria-label="Assessment progress">
+              <!-- Rows 1 to 6 injected dynamically via JS -->
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right Panel: 8 columns (Pure White, 1px hairline, 4px radius, min-height 560px, page scrolls) -->
+        <div class="tool-panel">
+          <!-- a. Tab Row (56px) -->
+          <div class="panel-tab-bar" role="tablist" aria-label="Assistant modes">
+            <button 
+              id="tabFitCheck" 
+              type="button" 
+              role="tab" 
+              class="panel-tab active" 
+              aria-selected="true" 
+              aria-controls="panelFitCheck" 
+              tabindex="0"
+            >
+              Fit check
+            </button>
+            <button 
+              id="tabAsk" 
+              type="button" 
+              role="tab" 
+              class="panel-tab" 
+              aria-selected="false" 
+              aria-controls="panelAsk" 
+              tabindex="-1"
+            >
+              Ask a question
+            </button>
+            <div id="tabIndicator" class="tab-indicator" aria-hidden="true"></div>
+          </div>
+
+          <!-- b. Fit Check Tab Panel -->
+          <div id="panelFitCheck" role="tabpanel" class="tab-panel active" aria-labelledby="tabFitCheck">
+            <div class="panel-inner-body">
+              <!-- Active Question View -->
+              <div id="questionView" class="question-view">
+                <div class="question-header-meta">
+                  <span id="questionProgressLabel" class="question-meta-step">Question <span class="tabular">1</span> of <span class="tabular">6</span></span>
+                </div>
+
+                <!-- Detached 6-segment progress bar with animated brand fills -->
+                <div id="progressBar" class="detached-progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="6" aria-label="Quiz progression">
+                  <div class="progress-cell filled"><div class="progress-cell-fill"></div></div>
+                  <div class="progress-cell"><div class="progress-cell-fill"></div></div>
+                  <div class="progress-cell"><div class="progress-cell-fill"></div></div>
+                  <div class="progress-cell"><div class="progress-cell-fill"></div></div>
+                  <div class="progress-cell"><div class="progress-cell-fill"></div></div>
+                  <div class="progress-cell"><div class="progress-cell-fill"></div></div>
+                </div>
+
+                <!-- ONLY the current question is rendered here -->
+                <div id="currentQuestionContainer" class="current-question-container">
+                  <!-- Injected via JavaScript -->
+                </div>
+              </div>
+
+              <!-- Result View (renders after Q6) -->
+              <div id="resultView" class="result-view" style="display:none;" aria-live="polite">
+                <div class="result-header">
+                  <h3 class="result-title">Course fit assessment</h3>
+                  <p class="result-subtitle">Based on your 6 answers, here is where you stand and what to expect:</p>
+                </div>
+
+                <div class="result-rows-list">
+                  <div class="result-row">
+                    <div class="result-col-label">Where you would start</div>
+                    <div id="resultWhereToStart" class="result-col-content"></div>
+                  </div>
+                  <div class="result-row">
+                    <div class="result-col-label">What you can build</div>
+                    <div id="resultWhatYouCanBuild" class="result-col-content"></div>
+                  </div>
+                  <div class="result-row">
+                    <div class="result-col-label">What to know before you enroll</div>
+                    <div id="resultWhatToKnow" class="result-col-content"></div>
+                  </div>
+                </div>
+
+                <div class="result-actions">
+                  <a href="https://cohort.lapaas.com/" target="_blank" rel="noopener noreferrer" class="btn-primary">Enroll on the official page</a>
+                  <button id="resultAskBtn" type="button" class="link-secondary result-ask-btn">Ask a question</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- c. Panel Footer Row in Fit Check -->
+            <div class="panel-footer-row">
+              <button id="backBtn" type="button" class="panel-footer-btn" style="visibility:hidden;" aria-label="Go to previous question">Back</button>
+              <button id="restartBtn" type="button" class="panel-footer-btn" aria-label="Restart questions">Restart</button>
+            </div>
+          </div>
+
+          <!-- c. Ask Tab Panel -->
+          <div id="panelAsk" role="tabpanel" class="tab-panel" aria-labelledby="tabAsk" hidden>
+            <div class="panel-inner-body ask-body">
+              <!-- Quick Questions Empty State / Drawer -->
+              <div id="askQuickContainer" class="ask-quick-section">
+                <div class="ask-quick-header">
+                  <span class="ask-quick-label">Quick questions</span>
+                  <button id="toggleQuickQuestionsBtn" type="button" class="quick-toggle-btn" style="display:none;">Common questions</button>
+                </div>
+                <div id="quickQuestionsGrid" class="quick-questions-grid">
+                  <button type="button" class="quick-question-card" data-query="How much does it cost?">Fees &amp; Price</button>
+                  <button type="button" class="quick-question-card" data-query="Do you give job or placement guarantee?">Job Guarantee?</button>
+                  <button type="button" class="quick-question-card" data-query="Do I need coding?">Do I need coding?</button>
+                  <button type="button" class="quick-question-card" data-query="Is it live or self paced?">Live or Self-paced?</button>
+                  <button type="button" class="quick-question-card" data-query="What is the refund policy?">Refund Policy</button>
+                  <button type="button" class="quick-question-card" data-query="What language is it taught in?">Hindi or English?</button>
+                </div>
+              </div>
+
+              <!-- Chat Message Thread (grows naturally, no inner scroll container) -->
+              <div id="chatThread" class="chat-thread" role="log" aria-live="polite">
+                <!-- Dialogue messages appended here -->
+              </div>
+            </div>
+
+            <!-- Sticky Input Row at bottom of Ask panel -->
+            <form id="chatForm" class="panel-input-row">
+              <input 
+                id="chatInput" 
+                type="text" 
+                class="panel-input" 
+                placeholder="Ask about tuition, hours, prerequisites, or policies..." 
+                autocomplete="off"
+                aria-label="Ask a question about the course"
+              >
+              <button id="chatSubmitBtn" type="submit" class="panel-submit-btn">Send</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Footer (Obsidian Black) -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-copy">Lapaas AI Product Engineering. Answers are based on the official course details.</div>
+      <div class="footer-links">
+        <a href="https://cohort.lapaas.com/" target="_blank" rel="noopener noreferrer">Official Cohort</a>
+        <a href="https://lapaas.com/refund-policy.html" target="_blank" rel="noopener noreferrer">Refund Policy</a>
+        <a href="https://wa.me/919540065704" target="_blank" rel="noopener noreferrer">WhatsApp Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Knowledge Base and Application Logic -->
+  <script src="knowledge_base.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
