@@ -3,6 +3,7 @@
 **Candidate:** Aryan Kumar  
 **Target Role:** AI Product Engineering / Technical Product Intern at Lapaas  
 **Evaluation Date:** October 2026  
+**🚀 Live Deployed Application (GitHub Pages):** [https://aryanchahal29.github.io/lapaas-ai-course-assistant/](https://aryanchahal29.github.io/lapaas-ai-course-assistant/)  
 **Live Prototype Directory:** [`03_Prototype_and_Source_Files/`](03_Prototype_and_Source_Files/)
 
 ---
@@ -30,13 +31,19 @@ The user interface follows the official **Lapaas Brand Guidelines (Pomelli)** wi
 
 ---
 
-## ⚡ How to Run the Prototype in 5 Seconds
+## ⚡ How to Access & Run the Prototype
 
-1. **Local Instant Execution:**
-   - Open [`03_Prototype_and_Source_Files/`](03_Prototype_and_Source_Files/) on your computer.
-   - Double-click [`index.html`](03_Prototype_and_Source_Files/index.html).
+1. **Live Production Web App (Instant Access):**
+   - Access the live, responsive web application directly on GitHub Pages:  
+     👉 **[https://aryanchahal29.github.io/lapaas-ai-course-assistant/](https://aryanchahal29.github.io/lapaas-ai-course-assistant/)**
+   - No installation or build steps needed. Works seamlessly across modern desktop and mobile browsers.
+
+2. **Local Instant Execution:**
+   - Clone or download this repository.
+   - Open [`03_Prototype_and_Source_Files/index.html`](03_Prototype_and_Source_Files/index.html) or the root `index.html` on your computer.
    - It runs instantly in any modern web browser without needing `npm`, Node.js, Python, or local servers.
-2. **Zero Dependencies & Zero API Keys:**
+
+3. **Zero Dependencies & Zero API Keys:**
    - 100% vanilla client-side JavaScript.
    - Zero external framework dependencies.
    - Operates with ₹0 monthly cost and zero risk of API quota exhaustion.
